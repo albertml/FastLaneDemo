@@ -32,13 +32,6 @@ lane :betas do
 
 end
 
-
-
-lane :production do
-  frameit
-  deliver(force: true)
-end
-
 lane :increment_build do
 	increment_build_number
 end
