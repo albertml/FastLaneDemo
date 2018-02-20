@@ -1,0 +1,5 @@
+Cyan-Color       : 0xff66ccff
+ArticleTitle     : #80A8FB
+ArticleBody      : 339666
+ArticleFootnote  : ff66ccff
+Translucent      : ffffffcc

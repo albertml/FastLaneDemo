@@ -1,0 +1,14 @@
+line_length:
+  - 300 # warning
+  - 400 # error
+function_parameter_count: 3
+function_body_length: 20
+file_length: 200
+disabled_rules:
+  - force_cast
+  - trailing_whitespace
+opt_in_rules:
+  - empty_count
+  - force_unwrapping
+excluded:
+  - Pods

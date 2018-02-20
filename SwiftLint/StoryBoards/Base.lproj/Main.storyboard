@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sQB-ZU-uHS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftLint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hej-YE-msY">
+                                <rect key="frame" x="36" y="130" width="303" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="LocalizeKey" value="Login.Description"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CZT-bx-Bb1">
+                                <rect key="frame" x="93" y="167" width="189" height="163"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="dkT-7Q-wya"/>
+                                    <constraint firstAttribute="width" constant="189" id="ony-uZ-dX6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CZT-bx-Bb1" firstAttribute="top" secondItem="hej-YE-msY" secondAttribute="bottom" constant="37" id="BQX-Hx-SpF"/>
+                            <constraint firstItem="hej-YE-msY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="Laq-Je-Tkx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hej-YE-msY" secondAttribute="trailing" constant="36" id="MYM-if-Asu"/>
+                            <constraint firstItem="CZT-bx-Bb1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYB-c6-cQ7"/>
+                            <constraint firstItem="hej-YE-msY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="z95-4r-EzK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xg8-bU-9fn">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="o8x-Z6-Wbn">
+                            <connections>
+                                <segue destination="5c4-df-2k4" kind="show" id="5Aw-G6-5mS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imgUser" destination="CZT-bx-Bb1" id="YJ4-qu-2uO"/>
+                        <outlet property="lblTitle" destination="hej-YE-msY" id="U5K-Lr-bJw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455.19999999999999" y="117.39130434782609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2I8-IK-nzZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ex-GN-4pi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="5c4-df-2k4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eNe-lT-cOe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocky" translatesAutoresizingMaskIntoConstraints="NO" id="MKY-eZ-kks">
+                                <rect key="frame" x="67" y="94" width="141" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4b-9z-XD9">
+                                <rect key="frame" x="91" y="260" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="kka-gx-NFI" kind="show" id="ne5-Fa-Fgx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="x0B-Y3-Ma3"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1296.8" y="116.49175412293854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mYz-SN-1gL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="no2-2V-MwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sQB-ZU-uHS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KGp-z1-JVt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EFt-AR-MV6"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-388" y="117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Osh-VJ-9L2">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7Q-MX-pUM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="kka-gx-NFI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G8K-nO-wHg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="albert" translatesAutoresizingMaskIntoConstraints="NO" id="TYh-47-iBe">
+                                <rect key="frame" x="67" y="94" width="141" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="QCq-aV-HyG"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2022" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="albert" width="2448" height="3264"/>
+        <image name="rocky" width="2448" height="3264"/>
+    </resources>
+</document>

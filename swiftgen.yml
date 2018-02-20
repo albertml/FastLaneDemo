@@ -1,0 +1,20 @@
+strings:
+  paths: SwiftLint/Resources/Localizable.strings
+  templateName: structured-swift4
+  output: SwiftLint/Constants/LocalizeMessage.swift
+xcassets:
+  paths: SwiftLint/Resources/Assets.xcassets
+  templateName: swift4
+  output: SwiftLint/Constants/UIImage+Asset.swift
+colors:
+  paths: SwiftLint/Resources/colors.txt
+  templateName: swift4
+  output: SwiftLint/Constants/Colors.swift
+storyboards:
+  paths: SwiftLint/StoryBoards
+  templateName: swift4
+  output: SwiftLint/Constants/StoryBoards.swift
+fonts:
+  paths: SwiftLint/Resources/Fonts
+  templateName: swift4
+  output: SwiftLint/Constants/Fonts.swift

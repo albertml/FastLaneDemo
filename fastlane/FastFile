@@ -1,0 +1,71 @@
+# More documentation about how to customize your build
+# can be found here:
+# https://docs.fastlane.tools
+fastlane_version "2.68.0"
+
+# This value helps us track success metrics for Fastfiles
+# we automatically generate. Feel free to remove this line
+# once you get things running smoothly!
+generated_fastfile_id "15a7ab42-36d4-4d2a-83ee-a4bc12524208"
+
+default_platform :ios
+
+# Fastfile actions accept additional configuration, but
+# don't worry, fastlane will prompt you for required
+# info which you can add here later
+lane :betas do
+  #increment_build_number
+
+  # build your iOS app
+  build_app(
+    scheme: "SwiftLint",
+    export_method: "app-store"
+  )
+
+# upload to Testflight
+  pilot(skip_waiting_for_build_processing: true)
+
+  # slack(
+  #   slack_url: "https://hooks.slack.com/services/IDS"
+  # )
+
+
+end
+
+
+
+lane :production do
+  frameit
+  deliver(force: true)
+end
+
+lane :increment_build do
+	increment_build_number
+end
+
+lane :success_message do
+       slack(
+           message: "Success uploading app to itunes connect.",
+           success: true,
+           slack_url: "https://hooks.slack.com/services/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"
+       )
+   end
+
+
+lane :upload_beta do
+  match(type: "appstore")
+  build_app(scheme: "SwiftLint")
+  increment_build
+  upload_to_testflight
+  success_message
+  #testfairy(api_key: "02b06680837840cbb7de9a5e158a12a236c4665a")
+end
+
+lane :upload_release do
+  match(type: "appstore")
+  build_app(scheme: "SwiftLint")
+  increment_build
+  upload_to_app_store
+  success_message
+  #testfairy(api_key: "02b06680837840cbb7de9a5e158a12a236c4665a")
+end
