@@ -44,10 +44,16 @@ lane :success_message do
        )
    end
 
+lane :development do
+	match(type: "development")
+	#match(type: "adhoc")
+	#match(type: "appstore")
+end
 
 lane :upload_beta do
   match(type: "appstore")
-  build_app(scheme: "SwiftLint")
+  xcversion(version: "9.2") # Selects Xcode 8.1.0
+  gym(scheme: "SwiftLint")
   increment_build
   upload_to_testflight
   success_message
@@ -56,9 +62,10 @@ end
 
 lane :upload_release do
   match(type: "appstore")
+  xcversion(version: "9.2") # Selects Xcode 8.1.0
   build_app(scheme: "SwiftLint")
   increment_build
-  upload_to_app_store
+  deliver
   success_message
   #testfairy(api_key: "02b06680837840cbb7de9a5e158a12a236c4665a")
 end

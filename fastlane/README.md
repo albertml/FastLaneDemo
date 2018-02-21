@@ -20,11 +20,6 @@ or alternatively using `brew cask install fastlane`
 fastlane betas
 ```
 
-### production
-```
-fastlane production
-```
-
 ### increment_build
 ```
 fastlane increment_build
@@ -33,6 +28,11 @@ fastlane increment_build
 ### success_message
 ```
 fastlane success_message
+```
+
+### development
+```
+fastlane development
 ```
 
 ### upload_beta
