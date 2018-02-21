@@ -36,6 +36,15 @@ lane :increment_build do
 	increment_build_number
 end
 
+lane :increment_version do
+  #increment_version_number(
+  #  bump_type: "major" # Automatically increment major version number
+  #)
+  increment_version_number(
+  version_number: "2.0.1" # Set a specific version number
+)
+end
+
 lane :success_message do
        slack(
            message: "Success uploading app to itunes connect.",
