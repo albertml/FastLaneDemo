@@ -25,9 +25,24 @@ fastlane betas
 fastlane increment_build
 ```
 
+### increment_version
+```
+fastlane increment_version
+```
+
 ### success_message
 ```
 fastlane success_message
+```
+
+### screenshots
+```
+fastlane screenshots
+```
+
+### framing
+```
+fastlane framing
 ```
 
 ### development

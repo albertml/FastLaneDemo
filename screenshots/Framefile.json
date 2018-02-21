@@ -1,0 +1,69 @@
+{
+  "default": {
+    "keyword": {
+      "fonts": [
+        {
+          "font": "./fonts/Anton-Regular.ttf",
+          "supported": ["en-US"]
+        }
+      ]
+    },
+    "title": {
+      "fonts": [
+        {
+          "font": "./fonts/Pacifico-Regular.ttf",
+          "supported": ["en-US"]
+        }
+      ],
+      "color": "#545454"
+    },
+    "background": "./background.jpg",
+    "padding": 50
+  },
+
+
+  "data": [
+    {
+      "filter": "Brainstorming",
+      "keyword": {
+        "color": "#d21559"
+      }
+    },
+    {
+      "filter": "Organizing",
+      "keyword": {
+        "color": "#feb909"
+      }
+    },
+    {
+      "filter": "Sharing",
+      "keyword": {
+        "color": "#aa4dbc"
+      }
+    },
+    {
+      "filter": "BrainstormingX",
+      "keyword": {
+        "color": "#d21559"
+      }
+    },
+    {
+      "filter": "OrganizingX",
+      "keyword": {
+        "color": "#feb909"
+      }
+    },
+    {
+      "filter": "SharingX",
+      "keyword": {
+        "color": "#aa4dbc"
+      }
+    },
+    {
+      "filter": "Styling",
+      "keyword": {
+        "color": "#31bb48"
+      }
+    }
+  ]
+}

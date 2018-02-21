@@ -51,7 +51,15 @@ lane :success_message do
            success: true,
            slack_url: "https://hooks.slack.com/services/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"
        )
-   end
+end
+
+lane :screenshots do
+    snapshot
+end
+
+lane :framing do
+    frameit(white: true)
+end
 
 lane :development do
 	match(type: "development")
@@ -63,7 +71,7 @@ lane :upload_beta do
   match(type: "appstore")
   xcversion(version: "9.2") # Selects Xcode 8.1.0
   gym(scheme: "SwiftLint")
-  increment_build
+  #increment_build
   upload_to_testflight
   success_message
   #testfairy(api_key: "02b06680837840cbb7de9a5e158a12a236c4665a")
@@ -71,9 +79,9 @@ end
 
 lane :upload_release do
   match(type: "appstore")
-  xcversion(version: "9.2") # Selects Xcode 8.1.0
-  build_app(scheme: "SwiftLint")
-  increment_build
+  #xcversion(version: "9.2") # Selects Xcode 8.1.0
+  gym(scheme: "SwiftLint")
+  #increment_build
   deliver
   success_message
   #testfairy(api_key: "02b06680837840cbb7de9a5e158a12a236c4665a")
